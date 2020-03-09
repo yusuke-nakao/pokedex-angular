@@ -1,0 +1,24 @@
+<main>
+  <div fxLayout="row wrap">
+    <div *ngFor="let poke of pokedex; let i = index" fxFlex="20%" fxFlex.sm="33%" fxFlex.xs="33%" style="padding:2px 2px;">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{poke.name}}</mat-card-title>
+          <mat-card-subtitle>{{poke.id}}</mat-card-subtitle>
+        </mat-card-header>
+        <img  mat-card-image [src]="poke.imageUrl" fxLayoutAlign="center center" style="object-fit: fill;">
+        <mat-card-content>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</main>
+<!-- <div fxLayout="row wrap">
+  <div *ngFor="let poke of pokedex; let i = index" fxFlex="20%" fxFlex.sm="33%" fxFlex.xs="33%" style="padding:2px 2px;">
+    <div>{{poke.name}}</div>
+    <img [src]="poke.imageUrl" fxLayoutAlign="center center" style="object-fit: fill;">
+  </div>
+</div>
+ -->
