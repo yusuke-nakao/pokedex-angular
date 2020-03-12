@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PokemonService } from './shared/Service/pokemon.service';
@@ -18,6 +19,7 @@ import { PokemonService } from './shared/Service/pokemon.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    MatGridListModule,
     HttpClientModule,
     FlexLayoutModule,
   ],
